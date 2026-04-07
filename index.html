@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engr. Abdul Wahab — Mechanical Design Engineer & Product Designer</title>
+    <meta name="description" content="Portfolio of Engr. Abdul Wahab, a Mechanical Design Engineer and Product Designer specializing in SolidWorks CAD, 3D modeling, and manufacturing-ready designs.">
+    <meta name="keywords" content="Mechanical Engineer, Product Designer, SolidWorks, CAD, 3D Modeling, Abdul Wahab">
+    <meta name="author" content="Engr. Abdul Wahab">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Google Fonts: Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Aurora Borealis Background -->
+    <canvas id="aurora-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="nav-logo">AW</span>
+            <div class="nav-title">
+                <span class="nav-name">Abdul Wahab</span>
+                <span class="nav-subtitle">MECHANICAL DESIGN ENGINEER</span>
+            </div>
+        </div>
+        <div class="nav-actions">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                <span class="theme-label">Dark</span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-link" data-section="hero">Home</a></li>
+            <li><a href="#experience" class="mobile-link" data-section="experience">Experience</a></li>
+            <li><a href="#education" class="mobile-link" data-section="education">Education</a></li>
+            <li><a href="#projects" class="mobile-link" data-section="projects">Projects</a></li>
+            <li><a href="#skills" class="mobile-link" data-section="skills">Skills</a></li>
+            <li><a href="#certifications" class="mobile-link" data-section="certifications">Certifications</a></li>
+            <li><a href="#contact" class="mobile-link" data-section="contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section class="section hero-section" id="hero">
+            <div class="glass-card hero-card animate-in">
+                <div class="hero-layout">
+                    <div class="hero-photo-wrapper">
+                        <img src="assets/images/profile.png" alt="Engr. Abdul Wahab — Mechanical Design Engineer" class="hero-photo" id="hero-photo">
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-badge">
+                            <span class="badge">Mechanical Design Engineer</span>
+                            <span class="badge badge-accent">Product Designer</span>
+                        </div>
+                        <h1 class="hero-name">Abdul Wahab</h1>
+                        <p class="hero-department">Mechanical Engineering</p>
+                        <p class="hero-university">B.Sc. — University of Engineering & Technology, Peshawar</p>
+
+                        <div class="hero-contact">
+                            <div class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                                <a href="mailto:abdulwahabeng2023@gmail.com" class="highlight-text">abdulwahabeng2023@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone" class="contact-icon"></i>
+                                <a href="https://wa.me/923183605425" target="_blank" rel="noopener" class="highlight-text">+92 318 3605425</a>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="map-pin" class="contact-icon"></i>
+                                <span>D12 Markaz Islamabad, Pakistan</span>
+                            </div>
+                        </div>
+
+                        <a href="assets/files/abdul_wahab_cv1.docx.pdf" download class="btn-download" id="btn-download-cv">
+                            <i data-lucide="download" class="btn-icon"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- External Profiles -->
+        <section class="section" id="profiles">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="link" class="section-icon"></i>
+                    External Profiles
+                </h2>
+                <div class="profiles-grid">
+                    <a href="https://www.linkedin.com/in/abdul-wahab-4085b72b0/" target="_blank" rel="noopener" class="profile-btn">
+                        <i data-lucide="linkedin" class="profile-icon"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/WahabAbdull" target="_blank" rel="noopener" class="profile-btn">
+                        <i data-lucide="github" class="profile-icon"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~019c119d09bbe7f8c9" target="_blank" rel="noopener" class="profile-btn">
+                        <i data-lucide="briefcase" class="profile-icon"></i>
+                        Upwork
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Interests -->
+        <section class="section" id="research">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="lightbulb" class="section-icon"></i>
+                    Research Interests
+                </h2>
+                <p class="research-text">
+                    Autonomous and intelligent vehicle systems, robotic navigation and SLAM, AI applications in robotics, 
+                    scene understanding for autonomous driving, end-to-end autonomous systems, innovative product and 
+                    mechanical design, and design for manufacturability in robotic platforms.
+                </p>
+            </div>
+        </section>
+
+        <!-- About / Summary -->
+        <section class="section" id="about">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="user" class="section-icon"></i>
+                    About Me
+                </h2>
+                <p class="about-text">
+                    Mechanical Design Engineer and Product Designer with 2.0 years of experience specializing in 
+                    SolidWorks-based CAD modeling. Skilled in 3D part design, complex assemblies, and detailed 
+                    manufacturing drawings in compliance with engineering standards. Proven experience designing 
+                    industrial machinery, mechanical systems, and consumer products, with a strong focus on accuracy, 
+                    manufacturability, and functional performance. Adept at transforming concepts into production-ready 
+                    designs through creative problem-solving techniques and industry standards.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="briefcase" class="section-icon"></i>
+                    Professional Experience
+                </h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Aug 2025 — Present</span>
+                            <span class="timeline-separator">||</span>
+                            <span class="timeline-role">Mechanical Design Engineer — Freelance (Upwork)</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Delivered professional mechanical and product design services to international clients via Upwork.</li>
+                            <li>Created 3D CAD models, assemblies, 2D technical drawings, and photorealistic renders for prototyping and manufacturing.</li>
+                            <li>Designed components for consumer products and industrial applications, optimized for material selection and manufacturing processes.</li>
+                            <li>Communicated directly with clients to gather requirements, manage revisions, and meet project deadlines.</li>
+                            <li>Maintained high client satisfaction through quality delivery and clear technical communication.</li>
+                        </ul>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SolidWorks</span>
+                            <span class="skill-tag">3D CAD Modeling</span>
+                            <span class="skill-tag">3D CAD Rendering</span>
+                            <span class="skill-tag">2D Technical Drawing</span>
+                            <span class="skill-tag">Prototyping Support</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Dec 2024 — Present</span>
+                            <span class="timeline-separator">||</span>
+                            <span class="timeline-role">Mechanical Design Engineer — Self-Employed, Islamabad</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designed precise 3D mechanical parts, assemblies, and production drawings using SolidWorks.</li>
+                            <li>Completed multiple mini and industrial projects, including Centrifugal Pumps, Heat Exchangers, Parabolic Troughs, and Phone Casings.</li>
+                            <li>Developed consumer and industrial products such as Mixture Machines, Helmets, Toothbrushes, Water Taps, and Waste Bins.</li>
+                            <li>Ensured manufacturability, dimensional accuracy, and functional performance in all designs.</li>
+                            <li>Collaborated with clients to convert ideas and concepts into practical, cost-effective design solutions.</li>
+                        </ul>
+                        <div class="skill-tags">
+                            <span class="skill-tag">3D Modeling</span>
+                            <span class="skill-tag">3D Rendering</span>
+                            <span class="skill-tag">Industrial Design</span>
+                            <span class="skill-tag">Product Design Consultation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="graduation-cap" class="section-icon"></i>
+                    Education
+                </h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Sep 2019 — Oct 2023</span>
+                            <span class="timeline-separator">||</span>
+                            <span class="timeline-role">B.Sc. Mechanical Engineering</span>
+                        </div>
+                        <p class="timeline-institution">University of Engineering and Technology, Peshawar — KPK, Pakistan</p>
+                        <ul class="timeline-details">
+                            <li><strong>Supervisor:</strong> Professor Usman</li>
+                            <li><strong>Final Project:</strong> Design and Fabrication of Mechanism for Automated Installation of 18 Liter Water Bottle of Water Dispenser</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Sep 2017 — Jun 2018</span>
+                            <span class="timeline-separator">||</span>
+                            <span class="timeline-role">Pre-Engineering</span>
+                        </div>
+                        <p class="timeline-institution">WENSAM College, Dera Ismail Khan — KPK, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="folder-open" class="section-icon"></i>
+                    Featured Projects
+                </h2>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Flush-Driven -->
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="assets/images/projects/project_1/complete assembly.JPG" alt="Flush-Driven Aerosol Mechanism" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-title">Flush-Driven Aerosol Mechanism</h3>
+                            <p class="project-date">Mechanical Design — 2023</p>
+                            <p class="project-desc">
+                                A fully mechanical integrated mechanism for English-commode tanks that automates 
+                                air freshening using flush motion, eliminating the need for batteries or manual operation.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Mechanical Linkages</span>
+                                <span class="skill-tag">FEA Analysis</span>
+                                <span class="skill-tag">SolidWorks</span>
+                            </div>
+                            <button class="btn-go-deep" data-project="flush-driven">Go Deep</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Mixture Machine -->
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="assets/images/projects/project_2/1.jpeg" alt="Modular Mixture Machine" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-title">Mixture Machine</h3>
+                            <p class="project-date">Product Design — 2021</p>
+                            <p class="project-desc">
+                                Cordless, 5-piece quick-assembly personal mixer featuring a borosilicate glass vessel 
+                                and USB-C rechargeable conical drive base for on-the-go blending.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Conical Drive</span>
+                                <span class="skill-tag">Borosilicate Glass</span>
+                                <span class="skill-tag">USB-C Charging</span>
+                            </div>
+                            <button class="btn-go-deep" data-project="mixture-machine">Go Deep</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: CLI Toothbrush -->
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="assets/images/projects/project_3/1.PNG" alt="CLI Sonic Toothbrush" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-title">CLI Toothbrush</h3>
+                            <p class="project-date">Design & Sanitization — 2021</p>
+                            <p class="project-desc">
+                                Advanced sonic drive system paired with an integrated UV-C (265nm) sterilization 
+                                travel case, eliminating 99.88% of bacterial biomass.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">UV-C Sterilization</span>
+                                <span class="skill-tag">Li-Po Power</span>
+                                <span class="skill-tag">Modular Heads</span>
+                            </div>
+                            <button class="btn-go-deep" data-project="cli-toothbrush">Go Deep</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Mini Projects -->
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="assets/images/projects/project_4/1.PNG" alt="Mechanical Engineering Portfolio" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-title">Engineering Mini Projects</h3>
+                            <p class="project-date">Versatile CAD — 2021-2023</p>
+                            <p class="project-desc">
+                                Curated collection of industrial and conceptual models spanning centrifugal pumps, 
+                                heat exchangers, parabolic troughs, and parametric geometric forms.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Parametric CAD</span>
+                                <span class="skill-tag">Manufacturing</span>
+                                <span class="skill-tag">Surfacing</span>
+                            </div>
+                            <button class="btn-go-deep" data-project="mini-projects">Go Deep</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Project Deep-Dive Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-container glass-card">
+            <button class="modal-close" id="modal-close">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <div class="modal-gallery" id="modal-gallery">
+                        <!-- Project images will be injected here -->
+                    </div>
+                    <div class="modal-title-area">
+                        <h2 id="modal-title"></h2>
+                        <div id="modal-tags" class="skill-tags"></div>
+                    </div>
+                </div>
+                <div class="modal-content-grid">
+                    <div class="modal-main-text">
+                        <div class="modal-section">
+                            <h3><i data-lucide="alert-triangle"></i> Problem</h3>
+                            <p id="modal-problem"></p>
+                        </div>
+                        <div class="modal-section">
+                            <h3><i data-lucide="lightbulb"></i> Solution</h3>
+                            <p id="modal-solution"></p>
+                        </div>
+                        <div class="modal-section" id="modal-how-section">
+                            <h3><i data-lucide="settings"></i> How It Works / Details</h3>
+                            <ul id="modal-how"></ul>
+                        </div>
+                    </div>
+                    <div class="modal-side-text">
+                        <div class="modal-section">
+                            <h3><i data-lucide="check-circle-2"></i> Key Benefits</h3>
+                            <ul id="modal-benefits"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Full Images -->
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <button class="lightbox-close" id="lightbox-close"><i data-lucide="x"></i></button>
+        <img src="" alt="Full view" id="lightbox-img">
+    </div>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="wrench" class="section-icon"></i>
+                    Skills & Expertise
+                </h2>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-cat-icon">
+                            <i data-lucide="pen-tool"></i>
+                        </div>
+                        <h3>CAD & Design</h3>
+                        <ul>
+                            <li>SOLIDWORKS (3D/2D)</li>
+                            <li>CAD / Manufacturing Software</li>
+                            <li>3D Rendering</li>
+                            <li>Technical Drawing</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-cat-icon">
+                            <i data-lucide="factory"></i>
+                        </div>
+                        <h3>Engineering</h3>
+                        <ul>
+                            <li>Simulation & Analysis</li>
+                            <li>Manufacturing Processes</li>
+                            <li>Industrial Design</li>
+                            <li>Product Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-cat-icon">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3>Technology</h3>
+                        <ul>
+                            <li>Programming & AI</li>
+                            <li>Minitab</li>
+                            <li>Data & Productivity Tools</li>
+                            <li>Microsoft Office Suite</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-cat-icon">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Critical Thinking</li>
+                            <li>Clear Communication</li>
+                            <li>Detail Oriented</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section" id="certifications">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="award" class="section-icon"></i>
+                    Certifications
+                </h2>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <i data-lucide="shield-check" class="cert-icon"></i>
+                        <span>Pakistan Engineering Council (PEC) — Registered Engineer</span>
+                    </div>
+                    <div class="cert-item">
+                        <i data-lucide="badge-check" class="cert-icon"></i>
+                        <span>Certified SOLIDWORKS CAD Design Associate (CSWA)</span>
+                    </div>
+                    <div class="cert-item">
+                        <i data-lucide="target" class="cert-icon"></i>
+                        <span>Lean Six Sigma White Belt & Yellow Belt (LSSWB / LSSYB)</span>
+                    </div>
+                    <div class="cert-item">
+                        <i data-lucide="settings" class="cert-icon"></i>
+                        <span>Lean Fundamentals and Production</span>
+                    </div>
+                    <div class="cert-item">
+                        <i data-lucide="bar-chart-3" class="cert-icon"></i>
+                        <span>Data Analytics in Lean Six Sigma</span>
+                    </div>
+                    <div class="cert-item">
+                        <i data-lucide="heart-pulse" class="cert-icon"></i>
+                        <span>CPR, AED and First Aid Certified</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="section" id="languages">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="globe" class="section-icon"></i>
+                    Languages
+                </h2>
+                <div class="lang-grid">
+                    <div class="lang-item">
+                        <span class="lang-name">English</span>
+                        <span class="lang-level">Proficient (8/9)</span>
+                        <div class="lang-bands" data-score="8"></div>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Seraiki</span>
+                        <span class="lang-level">Native (9/9)</span>
+                        <div class="lang-bands" data-score="9"></div>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Urdu</span>
+                        <span class="lang-level">Fluent (9/9)</span>
+                        <div class="lang-bands" data-score="9"></div>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Hindi</span>
+                        <span class="lang-level">Fluent (8/9)</span>
+                        <div class="lang-bands" data-score="8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / References -->
+        <section class="section" id="contact">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="users" class="section-icon"></i>
+                    References
+                </h2>
+
+                <div class="references-grid">
+                    <div class="ref-card">
+                        <h3 class="ref-name">Prof. Dr. Naveed Ahmad</h3>
+                        <p class="ref-title">Assistant Professor, UET Peshawar, KPK, Pakistan</p>
+                        <div class="ref-contact">
+                            <span><i data-lucide="mail" class="ref-icon"></i> naveed@uetpeshawar.edu.pk</span>
+                            <span><i data-lucide="phone" class="ref-icon"></i> +92 92167968</span>
+                        </div>
+                    </div>
+                    <div class="ref-card">
+                        <h3 class="ref-name">Prof. Muhammad Alam Zaib Khan</h3>
+                        <p class="ref-title">Assistant Professor, UET Peshawar, KPK, Pakistan</p>
+                        <div class="ref-contact">
+                            <span><i data-lucide="mail" class="ref-icon"></i> alamzaibkhan@uetpeshwar.edu.pk</span>
+                            <span><i data-lucide="phone" class="ref-icon"></i> +92 3329368952</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">AW</span>
+                <div>
+                    <p class="footer-name">Abdul Wahab</p>
+                    <p class="footer-tagline">Mechanical Design Engineer & Product Designer — Transforming concepts into production-ready designs.</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="mailto:abdulwahabeng2023@gmail.com">abdulwahabeng2023@gmail.com</a>
+                    <a href="https://wa.me/923183605425" target="_blank" rel="noopener">+92 318 3605425</a>
+                    <span>Dera Ismail Khan, KPK, Pakistan</span>
+                </div>
+            </div>
+            <div class="footer-bottom-row">
+                <p class="footer-copyright">Copyright &copy; 2026 Engr. Abdul Wahab. All rights reserved.</p>
+                <p class="footer-creator">Created by <a href="https://wa.me/923090757010" target="_blank" rel="noopener">Nest Portfolios</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
