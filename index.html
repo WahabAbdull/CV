@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engr. Abdul Wahab — Mechanical Design Engineer</title>
+    <meta name="description" content="Portfolio of Engr. Abdul Wahab, a Mechanical Design Engineer and Product Designer specializing in SolidWorks CAD, 3D modeling, and manufacturing-ready designs.">
+    <meta name="keywords" content="Mechanical Engineer, Product Designer, SolidWorks, CAD, 3D Modeling, Abdul Wahab, Research, Manufacturing">
+    <meta name="author" content="Engr. Abdul Wahab">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Google Fonts: Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Engineering Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-title">SYSTEM CALIBRATION</div>
+            <div class="preloader-track-container">
+                <div class="preloader-nodes">
+                    <div class="preloader-node node-start"></div>
+                    <div class="preloader-node node-consistency"><span class="node-label">Consistency</span></div>
+                    <div class="preloader-node node-hardworking"><span class="node-label">Hard Working</span></div>
+                    <div class="preloader-node node-success"><span class="node-label">Success</span></div>
+                </div>
+                <div class="preloader-track">
+                    <div class="preloader-line"></div>
+                </div>
+            </div>
+            <div class="preloader-status" id="preloader-status">Initializing...</div>
+        </div>
+    </div>
+
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="reading-progress"></div>
+
+    <!-- Aurora Borealis Background -->
+    <canvas id="aurora-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="nav-logo">AW</span>
+            <div class="nav-title">
+                <span class="nav-name">Abdul Wahab</span>
+                <span class="nav-subtitle">MECHANICAL DESIGN ENGINEER</span>
+            </div>
+        </div>
+        <div class="nav-actions">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#methodology" class="nav-link" data-section="methodology">Methodology</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                <span class="theme-label">Dark</span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-link" data-section="hero">Home</a></li>
+            <li><a href="#methodology" class="mobile-link" data-section="methodology">Methodology</a></li>
+            <li><a href="#experience" class="mobile-link" data-section="experience">Experience</a></li>
+            <li><a href="#education" class="mobile-link" data-section="education">Education</a></li>
+            <li><a href="#projects" class="mobile-link" data-section="projects">Projects</a></li>
+            <li><a href="#skills" class="mobile-link" data-section="skills">Skills</a></li>
+            <li><a href="#publications" class="mobile-link" data-section="publications">Publications</a></li>
+            <li><a href="#contact" class="mobile-link" data-section="contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section class="section hero-section" id="hero" style="padding-top: 2rem;">
+            <div class="hero-layout">
+                <div class="hero-info animate-in">
+                    <div class="credential-ribbon">
+                        <div class="credential-item">
+                            <i data-lucide="shield-check"></i> PEC Registered
+                        </div>
+                        <div class="credential-dot"></div>
+                        <div class="credential-item">
+                            <i data-lucide="badge-check"></i> CSWA Certified
+                        </div>
+                        <div class="credential-dot"></div>
+                        <div class="credential-item">
+                            <i data-lucide="globe"></i> IELTS Band 6.0
+                        </div>
+                        <div class="credential-dot"></div>
+                        <div class="credential-item">
+                            <i data-lucide="graduation-cap"></i> B.Sc. UET Peshawar
+                        </div>
+                    </div>
+
+                    <h1 class="hero-name">Abdul Wahab</h1>
+                    <p class="hero-research-statement">"Bridging mechanical design innovation with manufacturing excellence."</p>
+
+                    <div class="hero-contact">
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                            <a href="mailto:abdulwahabeng2023@gmail.com" class="highlight-text">abdulwahabeng2023@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <a href="https://wa.me/923183605425" target="_blank" rel="noopener" class="highlight-text">+92 318 3605425</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            <span>Islamabad, Pakistan</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="assets/files/abdul_wahab_cv1.pdf" download class="btn-download" id="btn-download-cv">
+                            <i data-lucide="download" class="btn-icon"></i>
+                            Download Academic CV
+                        </a>
+                    </div>
+                    
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <div class="metric-number" data-target="2">0</div>
+                            <div class="metric-label">Years Exp.</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-number" data-target="20">0</div>
+                            <div class="metric-label">Projects</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-number" data-target="5">0</div>
+                            <div class="metric-label">Global Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-photo-wrapper animate-in" style="transition-delay: 0.2s;">
+                    <img src="assets/images/profile.png" alt="Engr. Abdul Wahab — Mechanical Design Engineer" class="hero-photo" id="hero-photo" style="width: 280px; height: 380px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- External Profiles -->
+        <section class="section" id="profiles">
+            <div class="glass-card animate-in">
+                <div class="profiles-grid">
+                    <a href="https://www.linkedin.com/in/abdul-wahab-4085b72b0/" target="_blank" rel="noopener" class="profile-btn">
+                        <i data-lucide="linkedin" class="profile-icon"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/WahabAbdull" target="_blank" rel="noopener" class="profile-btn">
+                        <i data-lucide="github" class="profile-icon"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~019c119d09bbe7f8c9" target="_blank" rel="noopener" class="profile-btn">
+                        <i data-lucide="briefcase" class="profile-icon"></i>
+                        Upwork
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Interests & About -->
+        <section class="section section-numbered" id="about">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="user" class="section-icon"></i>
+                    Profile & Interests
+                </h2>
+                <p class="about-text" style="font-size: 1.1rem; line-height: 1.8;">
+                    Mechanical Design Engineer and Product Designer with a rigorous, methodology-driven approach to SolidWorks-based CAD modeling. Adept at transforming complex concepts into production-ready designs through creative problem-solving techniques, strict adherence to industry standards, and a deep understanding of manufacturing processes. 
+                </p>
+                <div class="skill-tags" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                    <span class="skill-tag">Autonomous Systems</span>
+                    <span class="skill-tag">Robotic Navigation (SLAM)</span>
+                    <span class="skill-tag">AI in Robotics</span>
+                    <span class="skill-tag">Design for Manufacturability</span>
+                </div>
+                
+                <div class="philosophy-container" style="padding: 1.5rem; background: var(--metric-bg); border-radius: 12px; border-left: 4px solid var(--clr-accent-1);">
+                    <h3 class="philosophy-title" style="font-size: 1.3rem;"><i data-lucide="microscope"></i> Design Philosophy</h3>
+                    <p class="about-text">
+                        I approach mechanical design with a researcher's mindset: prioritizing empirical validation, functional performance, and material efficiency. Every model is engineered not just for aesthetic appeal, but for absolute manufacturability and operational resilience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering Methodology (Split Sticky Layout) -->
+        <section class="section section-numbered" id="methodology">
+            <div class="split-layout">
+                <div class="sticky-sidebar animate-in">
+                    <h2 class="section-title" style="flex-direction: column; align-items: flex-start; gap: 1rem;">
+                        <i data-lucide="workflow" class="section-icon"></i>
+                        Methodology
+                    </h2>
+                    <p class="section-subtitle" style="font-size: 1rem; margin-top: 0; line-height: 1.6;">A systematic, repeatable approach to problem-solving and product development.</p>
+                </div>
+                <div class="scroll-content">
+                    
+                    <div class="glass-card animate-in">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div class="pipeline-icon" style="margin: 0; transform: scale(1.2);"><i data-lucide="search"></i></div>
+                            <div>
+                                <div class="pipeline-number" style="font-size: 0.8rem;">01</div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem;">Identification</h3>
+                            </div>
+                        </div>
+                        <p class="about-text">Literature review and market research to define constraints, establish baseline performance metrics, and validate core assumptions before CAD initiation.</p>
+                    </div>
+
+                    <div class="glass-card animate-in">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div class="pipeline-icon" style="margin: 0; transform: scale(1.2);"><i data-lucide="pen-tool"></i></div>
+                            <div>
+                                <div class="pipeline-number" style="font-size: 0.8rem;">02</div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem;">Conceptualization</h3>
+                            </div>
+                        </div>
+                        <p class="about-text">Parametric 3D CAD modeling in SolidWorks focusing on top-down assembly, robust sketch relations, and geometric tolerances.</p>
+                    </div>
+
+                    <div class="glass-card animate-in">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div class="pipeline-icon" style="margin: 0; transform: scale(1.2);"><i data-lucide="activity"></i></div>
+                            <div>
+                                <div class="pipeline-number" style="font-size: 0.8rem;">03</div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem;">Analysis</h3>
+                            </div>
+                        </div>
+                        <p class="about-text">Iterative Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD) to validate structural integrity, thermal loads, and fluid behavior.</p>
+                    </div>
+
+                    <div class="glass-card animate-in">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div class="pipeline-icon" style="margin: 0; transform: scale(1.2);"><i data-lucide="box"></i></div>
+                            <div>
+                                <div class="pipeline-number" style="font-size: 0.8rem;">04</div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem;">Prototyping</h3>
+                            </div>
+                        </div>
+                        <p class="about-text">Optimization of parts for Additive Manufacturing (3D Printing), CNC Machining, or Injection Molding (DFMA).</p>
+                    </div>
+
+                    <div class="glass-card animate-in">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div class="pipeline-icon" style="margin: 0; transform: scale(1.2);"><i data-lucide="file-text"></i></div>
+                            <div>
+                                <div class="pipeline-number" style="font-size: 0.8rem;">05</div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem;">Documentation</h3>
+                            </div>
+                        </div>
+                        <p class="about-text">Generation of precise 2D technical drawings with GD&T and comprehensive Bill of Materials (BOM) for production handover.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (With Parallax and Before/After) -->
+        <section class="section section-numbered" id="projects" style="margin-top: 4rem;">
+            <div class="split-layout">
+                <div class="sticky-sidebar animate-in">
+                    <h2 class="section-title" style="flex-direction: column; align-items: flex-start; gap: 1rem;">
+                        <i data-lucide="folder-open" class="section-icon"></i>
+                        Featured Projects
+                    </h2>
+                    <p class="section-subtitle" style="font-size: 1rem; margin-top: 0; line-height: 1.6;">Demonstrating extreme precision through interactive models and technical reviews.</p>
+                </div>
+                
+                <div class="scroll-content">
+                    
+                    <!-- Project 1: Flush-Driven (Before/After Slider) -->
+                    <div class="glass-card animate-in">
+                        <h3 class="project-title" style="font-size: 1.8rem;">Flush-Driven Aerosol Mechanism</h3>
+                        <p class="project-date" style="font-size: 0.8rem;">Mechanical Automation</p>
+                        
+                        <div class="ba-wrapper">
+                            <img src="assets/images/projects/project_1/complete assembly.JPG" class="ba-image" alt="Manufactured / Assembled">
+                            <div class="ba-overlay">
+                                <img src="assets/images/projects/project_1/bill_of_material_manual_mechanism.JPG" alt="CAD / Bill of Materials">
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="ba-slider">
+                            <div class="ba-handle"></div>
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <i data-lucide="check-circle"></i>
+                            <span>FEA Validated: Optimal 5N Force</span>
+                        </div>
+                        <p class="project-desc" style="font-size: 0.9rem;">
+                            A fully mechanical integrated mechanism for English-commode tanks that automates air freshening using flush motion, eliminating battery dependency. Slide to compare the CAD Bill of Materials with the final modeled assembly.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">FEA Analysis</span>
+                            <span class="skill-tag">Kinematics</span>
+                            <span class="skill-tag">SolidWorks</span>
+                        </div>
+                        <button class="btn-go-deep" data-project="flush-driven" style="font-size: 0.85rem; padding: 0.8rem 1.6rem;">Technical Review</button>
+                    </div>
+
+                    <!-- Project 2: Mixture Machine (Parallax) -->
+                    <div class="glass-card animate-in">
+                        <h3 class="project-title" style="font-size: 1.8rem;">Modular Mixture Machine</h3>
+                        <p class="project-date" style="font-size: 0.8rem;">Product Design & Ergonomics</p>
+                        
+                        <div class="parallax-container">
+                            <img src="assets/images/projects/project_2/1.jpeg" class="parallax-bg" alt="Modular Mixture Machine">
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <i data-lucide="maximize"></i>
+                            <span>40% Volume Reduction</span>
+                        </div>
+                        <p class="project-desc" style="font-size: 0.9rem;">
+                            Cordless, 5-piece quick-assembly personal mixer featuring a borosilicate glass vessel and USB-C rechargeable conical drive base for on-the-go blending.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">DFMA</span>
+                            <span class="skill-tag">Tolerance Stack-up</span>
+                            <span class="skill-tag">Consumer Goods</span>
+                        </div>
+                        <button class="btn-go-deep" data-project="mixture-machine" style="font-size: 0.85rem; padding: 0.8rem 1.6rem;">Technical Review</button>
+                    </div>
+
+                    <!-- Project 3: CLI Toothbrush (Parallax) -->
+                    <div class="glass-card animate-in">
+                        <h3 class="project-title" style="font-size: 1.8rem;">CLI Sonic Toothbrush</h3>
+                        <p class="project-date" style="font-size: 0.8rem;">Sanitization Technology</p>
+                        
+                        <div class="parallax-container">
+                            <img src="assets/images/projects/project_3/2.PNG" class="parallax-bg" alt="CLI Sonic Toothbrush">
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <i data-lucide="shield"></i>
+                            <span>99.88% Bacterial Elimination</span>
+                        </div>
+                        <p class="project-desc" style="font-size: 0.9rem;">
+                            Advanced sonic drive system paired with an integrated UV-C (265nm) sterilization travel case, featuring modular heads for sustainability.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Integration Design</span>
+                            <span class="skill-tag">Injection Molding Prep</span>
+                            <span class="skill-tag">Modular Arch</span>
+                        </div>
+                        <button class="btn-go-deep" data-project="cli-toothbrush" style="font-size: 0.85rem; padding: 0.8rem 1.6rem;">Technical Review</button>
+                    </div>
+
+                    <!-- Project 4: Mini Projects -->
+                    <div class="glass-card animate-in">
+                        <h3 class="project-title" style="font-size: 1.8rem;">Industrial Systems Library</h3>
+                        <p class="project-date" style="font-size: 0.8rem;">Mechanical Engineering Mini Projects</p>
+                        
+                        <div class="parallax-container">
+                            <img src="assets/images/projects/project_4/1.PNG" class="parallax-bg" alt="Industrial Systems Library">
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <i data-lucide="layers"></i>
+                            <span>7 Parametric Models</span>
+                        </div>
+                        <p class="project-desc" style="font-size: 0.9rem;">
+                            Curated collection of seven parametric SolidWorks projects spanning fluid power systems, thermal management, and complex geometric forms.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">CAD Proficiency</span>
+                            <span class="skill-tag">Industrial</span>
+                            <span class="skill-tag">Conceptual</span>
+                        </div>
+                        <button class="btn-go-deep" data-project="mini-projects" style="font-size: 0.85rem; padding: 0.8rem 1.6rem;">Technical Review</button>
+                    </div>
+
+                    <!-- Project 5: Controlled Flow -->
+                    <div class="glass-card animate-in">
+                        <h3 class="project-title" style="font-size: 1.8rem;">Controlled Flow Mechanical System</h3>
+                        <p class="project-date" style="font-size: 0.8rem;">Medical Technology</p>
+                        
+                        <div class="parallax-container">
+                            <img src="assets/images/projects/project_5/cryo1.png" class="parallax-bg" alt="Controlled Flow Mechanical System">
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <i data-lucide="check-circle"></i>
+                            <span>Simulation Validated</span>
+                        </div>
+                        <p class="project-desc" style="font-size: 0.9rem;">
+                            Mechanical development of a medical device involving controlled fluid/gas management and precision mechanical components.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flow Control</span>
+                            <span class="skill-tag">SolidWorks</span>
+                            <span class="skill-tag">ANSYS</span>
+                        </div>
+                        <button class="btn-go-deep" data-project="project-5" style="font-size: 0.85rem; padding: 0.8rem 1.6rem;">Technical Review</button>
+                    </div>
+
+                    <!-- Project 6: Mechanical Dispensing -->
+                    <div class="glass-card animate-in">
+                        <h3 class="project-title" style="font-size: 1.8rem;">Mechanical Dispensing System</h3>
+                        <p class="project-date" style="font-size: 0.8rem;">Fitness & Consumer Products</p>
+                        
+                        <div class="parallax-container">
+                            <img src="assets/images/projects/project_6/fit1.png" class="parallax-bg" alt="Mechanical Dispensing System">
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <i data-lucide="settings"></i>
+                            <span>Multi-Function Operation</span>
+                        </div>
+                        <p class="project-desc" style="font-size: 0.9rem;">
+                            Compact mechanical dispensing mechanism requiring controlled operation through a user-actuated system involving gears and rack mechanisms.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Kinematics</span>
+                            <span class="skill-tag">Altair EDEM</span>
+                            <span class="skill-tag">SolidWorks</span>
+                        </div>
+                        <button class="btn-go-deep" data-project="project-6" style="font-size: 0.85rem; padding: 0.8rem 1.6rem;">Technical Review</button>
+                    </div>
+
+                    <!-- Project 7: Medical Fluid Delivery -->
+                    <div class="glass-card animate-in">
+                        <h3 class="project-title" style="font-size: 1.8rem;">Medical Fluid Delivery System</h3>
+                        <p class="project-date" style="font-size: 0.8rem;">Medical Technology</p>
+                        
+                        <div class="parallax-container">
+                            <img src="assets/images/projects/project_7/f1.png" class="parallax-bg" alt="Medical Fluid Delivery System">
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <i data-lucide="activity"></i>
+                            <span>Integrated Subsystems</span>
+                        </div>
+                        <p class="project-desc" style="font-size: 0.9rem;">
+                            Integrated medical delivery system combining mechanical, fluidic, and electronic subsystems with optimized aesthetics and tolerance.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">DFM/DFA</span>
+                            <span class="skill-tag">SolidWorks</span>
+                            <span class="skill-tag">Subsystem Integration</span>
+                        </div>
+                        <button class="btn-go-deep" data-project="project-7" style="font-size: 0.85rem; padding: 0.8rem 1.6rem;">Technical Review</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section section-numbered" id="experience" style="margin-top: 4rem;">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="briefcase" class="section-icon"></i>
+                    Professional Experience
+                </h2>
+
+                <div class="timeline" style="margin-top: 2rem;">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-date">June 2026 — Present</span>
+                            <span class="timeline-separator">||</span>
+                            <span class="timeline-role" style="font-size: 1.1rem;">Mechanical Design Engineer — Dysol (Pvt) Ltd, Lahore</span>
+                        </div>
+                        
+                        <div style="margin-top: 1rem;">
+                            <strong style="color: var(--clr-accent-1);">1. Fitness Product — Mechanical Dispensing System</strong>
+                            <ul class="timeline-details" style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                                <li>Designed and optimized a compact mechanical dispensing mechanism involving gear systems, rack & pinion mechanisms, springs, sliding mechanisms, and functional interfaces.</li>
+                                <li>Developed a multi-function mechanical system operated through a single user input while managing limited mechanical travel constraints.</li>
+                                <li>Applied DFM/DFA principles to improve manufacturability, assembly, and reliability.</li>
+                            </ul>
+
+                            <strong style="color: var(--clr-accent-1);">2. Medical Product — Controlled Flow System</strong>
+                            <ul class="timeline-details" style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                                <li>Designed mechanical assemblies involving valves, filters, actuators, flow-control components, and precision mechanical interfaces.</li>
+                                <li>Applied mechanical and fluid-flow principles for controlled operation and system reliability.</li>
+                                <li>Supported design validation through simulation and iterative engineering improvements.</li>
+                            </ul>
+
+                            <strong style="color: var(--clr-accent-1);">3. Medical Product — Fluid Delivery System</strong>
+                            <ul class="timeline-details" style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                                <li>Developed a multi-subsystem product integrating mechanical structures, fluid delivery components, connectors, pumps, sensors, and electronic interfaces.</li>
+                                <li>Optimized product architecture considering aesthetics, tolerance requirements, manufacturability, and functional performance.</li>
+                                <li>Applied iterative design improvements for mechanical integration and production readiness.</li>
+                            </ul>
+
+                            <strong style="color: var(--clr-accent-1);">Engineering Challenges Managed</strong>
+                            <ul class="timeline-details" style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                                <li>Developed complex mechanical systems requiring multiple functions within limited space and movement constraints.</li>
+                                <li>Optimized designs through multiple iterations to improve functionality, reliability, and manufacturability.</li>
+                                <li>Managed challenges related to mechanism integration, pressure/flow control, tolerance optimization, aesthetic requirements, and subsystem integration.</li>
+                                <li>Converted engineering concepts into production-oriented designs using simulation and validation techniques.</li>
+                            </ul>
+
+                            <strong style="color: var(--clr-accent-1);">Software & Engineering Tools</strong>
+                            <ul class="timeline-details" style="font-size: 0.9rem; margin-top: 0.5rem; list-style-type: disc;">
+                                <li><strong>SolidWorks:</strong> 3D Modeling, Assembly Design, Advanced Part Design, Motion Analysis</li>
+                                <li><strong>ANSYS:</strong> Engineering Simulation and Design Validation</li>
+                                <li><strong>Altair EDEM:</strong> Mechanical/Particle-Based Simulation</li>
+                                <li><strong>Design Methodologies:</strong> DFM, DFA, Design Optimization, Prototype Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Aug 2023 — Present</span>
+                            <span class="timeline-separator">||</span>
+                            <span class="timeline-role" style="font-size: 1.1rem;">Mechanical Design Engineer — Freelance (<a href="https://www.upwork.com/freelancers/~019c119d09bbe7f8c9" target="_blank" rel="noopener" style="color: var(--clr-accent-1); text-decoration: none;">Upwork</a>)</span>
+                        </div>
+                        <ul class="timeline-details" style="font-size: 0.9rem;">
+                            <li>Delivered professional mechanical and product design services to international clients, applying rigorous engineering standards.</li>
+                            <li>Engineered precise 3D CAD models, complex assemblies, 2D technical drawings, and photorealistic renders for prototyping and manufacturing.</li>
+                            <li>Optimized components for consumer products and industrial applications, focusing on optimal material selection and manufacturing processes.</li>
+                            <li>Maintained a high degree of technical communication to translate client requirements into verifiable engineering parameters.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Dec 2021 — Present</span>
+                            <span class="timeline-separator">||</span>
+                            <span class="timeline-role" style="font-size: 1.1rem;">Mechanical Design Engineer — Self-Employed, Islamabad</span>
+                        </div>
+                        <ul class="timeline-details" style="font-size: 0.9rem;">
+                            <li>Executed end-to-end design of precise 3D mechanical parts and production-ready drawings using SolidWorks.</li>
+                            <li>Completed comprehensive industrial projects including Centrifugal Pumps, Shell-and-Tube Heat Exchangers, and Parabolic Troughs.</li>
+                            <li>Developed consumer-oriented designs (Mixture Machines, Helmets, UV-C Toothbrushes) with a focus on functional ergonomics and hygiene.</li>
+                            <li>Validated manufacturability, dimensional accuracy, and functional performance through iterative design review.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section section-numbered" id="education">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="graduation-cap" class="section-icon"></i>
+                    Education & Research
+                </h2>
+
+                <div class="timeline" style="margin-top: 2rem;">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Sep 2019 — Oct 2023</span>
+                            <span class="timeline-separator">||</span>
+                            <span class="timeline-role" style="font-size: 1.1rem;">B.Sc. Mechanical Engineering</span>
+                        </div>
+                        <p class="timeline-institution">University of Engineering and Technology (UET), Peshawar — KPK, Pakistan</p>
+                        
+                        <div class="fyp-callout" style="margin-top: 1.5rem;">
+                            <div class="fyp-label">Final Year Thesis Project</div>
+                            <div class="fyp-title" style="font-size: 1.1rem;">Design and Fabrication of Mechanism for Automated Installation of 18-Liter Water Bottle for Water Dispensers</div>
+                            <div class="fyp-supervisor">Under the supervision of <strong>Prof. Usman</strong></div>
+                        </div>
+
+                        <div class="coursework-tags" style="margin-top: 1.5rem;">
+                            <span class="coursework-tag">Thermodynamics</span>
+                            <span class="coursework-tag">Fluid Mechanics</span>
+                            <span class="coursework-tag">Machine Design</span>
+                            <span class="coursework-tag">CAD / CAM</span>
+                            <span class="coursework-tag">Manufacturing Processes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Deep-Dive Modal -->
+        <div class="modal-overlay" id="project-modal">
+            <div class="modal-container glass-card">
+                <button class="modal-close" id="modal-close">
+                    <i data-lucide="x"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <div class="modal-gallery" id="modal-gallery">
+                            <!-- Project images will be injected here -->
+                        </div>
+                        <div class="modal-title-area">
+                            <h2 id="modal-title" style="font-size: 2.5rem; line-height: 1.1;"></h2>
+                            <div id="modal-tags" class="skill-tags"></div>
+                        </div>
+                    </div>
+                    <div class="modal-content-grid">
+                        <div class="modal-main-text">
+                            <div class="modal-section">
+                                <h3 id="modal-problem-title"><i data-lucide="alert-triangle"></i> Problem Statement</h3>
+                                <p id="modal-problem" style="font-size: 0.95rem; line-height: 1.8;"></p>
+                            </div>
+                            <div class="modal-section">
+                                <h3 id="modal-solution-title"><i data-lucide="lightbulb"></i> Engineering Solution</h3>
+                                <p id="modal-solution" style="font-size: 0.95rem; line-height: 1.8;"></p>
+                            </div>
+                            <div class="modal-section" id="modal-how-section">
+                                <h3><i data-lucide="settings"></i> Technical Implementation</h3>
+                                <ul id="modal-how" style="font-size: 0.95rem; line-height: 1.8;"></ul>
+                            </div>
+                        </div>
+                        <div class="modal-side-text">
+                            <div class="modal-section">
+                                <h3 id="modal-benefits-title"><i data-lucide="check-circle-2"></i> Measurable Benefits</h3>
+                                <ul id="modal-benefits" style="font-size: 0.95rem; line-height: 1.8;"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal for Full Images -->
+        <div class="lightbox-overlay" id="lightbox-overlay">
+            <button class="lightbox-close" id="lightbox-close"><i data-lucide="x"></i></button>
+            <img src="" alt="Full view" id="lightbox-img">
+        </div>
+
+        <!-- Skills Section -->
+        <section class="section section-numbered" id="skills">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="wrench" class="section-icon"></i>
+                    Technical Expertise
+                </h2>
+
+                <div class="skills-grid" style="margin-top: 2rem;">
+                    <div class="skill-category">
+                        <div class="skill-cat-icon">
+                            <i data-lucide="pen-tool"></i>
+                        </div>
+                        <h3 style="font-size: 1.2rem;">CAD & Design</h3>
+                        <ul>
+                            <li>SOLIDWORKS (3D/2D)</li>
+                            <li>Parametric Modeling</li>
+                            <li>Advanced Surfacing</li>
+                            <li>Technical Drawing (GD&T)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-cat-icon">
+                            <i data-lucide="factory"></i>
+                        </div>
+                        <h3 style="font-size: 1.2rem;">Engineering Analysis</h3>
+                        <ul>
+                            <li>Simulation & FEA</li>
+                            <li>Design for Assembly (DFA)</li>
+                            <li>Design for Manufacturability (DFM)</li>
+                            <li>Tolerance Stack-up Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3 class="philosophy-title" style="margin-top: 3rem; font-size: 1.5rem;"><i data-lucide="award"></i> Professional Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-item cert-featured">
+                        <i data-lucide="shield-check" class="cert-icon"></i>
+                        <span style="font-size: 0.9rem;"><strong>Pakistan Engineering Council (PEC)</strong> — Registered Engineer</span>
+                    </div>
+                    <div class="cert-item cert-featured">
+                        <i data-lucide="badge-check" class="cert-icon"></i>
+                        <span style="font-size: 0.9rem;"><strong>Certified SOLIDWORKS Associate (CSWA)</strong> — Dassault Systèmes</span>
+                    </div>
+                    <div class="cert-item">
+                        <i data-lucide="target" class="cert-icon"></i>
+                        <span style="font-size: 0.9rem;">Lean Six Sigma White Belt & Yellow Belt (LSSWB / LSSYB)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Placeholder -->
+        <section class="section section-numbered" id="publications">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="book-open" class="section-icon"></i>
+                    Publications & Research
+                </h2>
+                
+                <div class="publications-placeholder" style="margin-top: 2rem;">
+                    <i data-lucide="file-text"></i>
+                    <p style="font-size: 1.1rem;">Research publications and academic conference proceedings will be listed here.</p>
+                    <p class="pub-note" style="font-size: 0.9rem;">Currently engaged in ongoing research and methodological documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages & References grouped -->
+        <section class="section section-numbered" id="contact">
+            <div class="glass-card animate-in">
+                <h2 class="section-title">
+                    <i data-lucide="users" class="section-icon"></i>
+                    Academic References
+                </h2>
+
+                <div class="references-grid" style="margin-top: 2rem;">
+                    <div class="ref-card">
+                        <h3 class="ref-name" style="font-size: 1.2rem;">Prof. Dr. Naveed Ahmad</h3>
+                        <p class="ref-title">Assistant Professor, UET Peshawar, KPK, Pakistan</p>
+                        <div class="ref-contact">
+                            <span><i data-lucide="mail" class="ref-icon"></i> naveed@uetpeshawar.edu.pk</span>
+                            <span><i data-lucide="phone" class="ref-icon"></i> +92 92167968</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="philosophy-title" style="margin-top: 3rem; font-size: 1.5rem;"><i data-lucide="globe"></i> Linguistic Proficiency</h3>
+                <div class="lang-grid">
+                    <div class="lang-item">
+                        <span class="lang-name" style="font-size: 1rem;">English</span>
+                        <span class="lang-level">Proficient</span>
+                        <div class="lang-bands" data-score="8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">AW</span>
+                <div>
+                    <p class="footer-name">Engr. Abdul Wahab</p>
+                    <p class="footer-tagline">Mechanical Design Engineer — Bridging innovation with manufacturing excellence.</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#methodology">Methodology</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills & Certifications</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <a href="mailto:abdulwahabeng2023@gmail.com">abdulwahabeng2023@gmail.com</a>
+                    <a href="https://wa.me/923183605425" target="_blank" rel="noopener">+92 318 3605425</a>
+                    <span>Islamabad, Pakistan</span>
+                </div>
+            </div>
+            <div class="footer-bottom-row">
+                <p class="footer-copyright">Copyright &copy; 2026 Engr. Abdul Wahab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
